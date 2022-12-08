@@ -1,5 +1,5 @@
-const inquirer = require('inquire');
-const generateMarkdown = require('./Develop/utils/generateMarkdown');
+const inquirer = require('inquirer');
+const generateMarkdown = require('./generateMarkdown');
 const fs = require('fs');
 const path = require('path')
 
@@ -23,7 +23,7 @@ function init() {
     },
     {
       type: 'list',
-      name: 'liscense',
+      name: 'license',
       message: 'what is the license?',
       choices: [
         'MIT',
